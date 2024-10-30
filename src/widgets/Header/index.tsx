@@ -47,7 +47,7 @@ const Header = () => {
                     </Text>
                 </Flex>
                 <Flex gap={'10px'}>
-                    <IconInput />
+                    <IconInput placeholder="Поиск" />
                     <Flex gap={'10px'}>
                         <ButtonIcon
                             icon={<Message
@@ -75,7 +75,6 @@ const Header = () => {
             >
                 <DrawerOverlay />
                 <DrawerContent bg='gray.200' p='15px'>
-                    {/* <DrawerCloseButton /> */}
                     <DrawerBody>
                         <ProfileCard />
                         <Flex flexDir='column' gap='10px' mt='20px'>

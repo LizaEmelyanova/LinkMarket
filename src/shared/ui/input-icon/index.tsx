@@ -11,7 +11,7 @@ interface PasswordInputProps {
 }
 
 export const IconInput = ({
-  placeholder = 'Поиск',
+  placeholder,
 }: PasswordInputProps) => {
   return (
     <InputGroup minW='320px'>

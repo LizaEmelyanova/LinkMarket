@@ -1,7 +1,10 @@
 import { Button, Flex, Text } from ".."
-
+import { useNavigate } from "react-router-dom"
+import { PageRoutes } from 'shared/config/pages'
 
 export const ProfileCard = () => {
+    const navigate = useNavigate()
+
     return (
         <Flex
             w='100%'
@@ -17,7 +20,7 @@ export const ProfileCard = () => {
                 Сейчас вы можете только просматривать товар
             </Text>
             <Text color='white' fontSize='14px'>Полный спектр возможностей открывается после регистрации.</Text>
-            <Button>Зарегистрироваться</Button>
+            <Button onClick={() => navigate(PageRoutes.LoginPage)}>Зарегистрироваться</Button>
         </Flex>
     )
 }
