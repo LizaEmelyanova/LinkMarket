@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
+import { PageRoutes } from "shared/config/pages"
 import { Message, Setting, Tg, VK, Youtube } from "shared/iconpack"
 import {
     Flex,
@@ -17,9 +19,17 @@ import {
 
 const Header = () => {
     const [isOpenMenu, setIsOpenMenu] = useState(false)
+    const navigate = useNavigate()
 
-    const btns = ['Все товары', 'Акции', 'Одежда', 'Украшения',
-        'Мебель', 'Игрушки', 'Другое']
+    const btns = [
+        {name: 'Все товары', onClick: () => navigate(PageRoutes.MainPage)},
+        {name: 'Акции', onClick: () => console.log('Акции')},
+        {name: 'Одежда', onClick: () => console.log('Одежда')},
+        {name: 'Украшения', onClick: () => console.log('Украшения')},
+        {name: 'Мебель', onClick: () => console.log('Мебель')},
+        {name: 'Игрушки', onClick: () => console.log('Игрушки')},
+        {name: 'Другое', onClick: () => console.log('Другое')}
+    ]
 
     return (
         <Flex flexDir='column' zIndex={100}>
@@ -79,7 +89,7 @@ const Header = () => {
                         <ProfileCard />
                         <Flex flexDir='column' gap='10px' mt='20px'>
                             {btns.map((btn) => (
-                                <Button>{btn}</Button>
+                                <Button onClick={btn.onClick}>{btn.name}</Button>
                             ))}
                         </Flex>
                     </DrawerBody>
