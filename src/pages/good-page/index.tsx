@@ -14,8 +14,7 @@ const GoodPage = () => {
         <ContainerPage>
             <Grid
                 w='100%'
-                h='100%'
-                p='10px'
+                h='95%'
                 gridTemplateColumns={'1fr 2fr'}
                 gridTemplateRows={'1fr 4fr 3fr'}
                 columnGap='50px'

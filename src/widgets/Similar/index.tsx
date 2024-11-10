@@ -4,7 +4,7 @@ import { Grid, GoodCard, Flex, Text, } from "shared/ui"
 const Similar = () => {
     return (
         <Flex
-            p='20px 30px 60px'
+            p='20px 30px 30px'
             bg='gray.300'
             borderRadius='30px 30px 0 0'
             flexDir='column'
