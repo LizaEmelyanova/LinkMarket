@@ -3,4 +3,5 @@ export const PageRoutes = {
     LoginPage: '/login',
     GoodPage: '/good',
     Basket: '/basket',
+    Profile: '/profile',
   } as const

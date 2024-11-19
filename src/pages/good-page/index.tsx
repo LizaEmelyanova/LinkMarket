@@ -5,7 +5,6 @@ import {
     PriceCard,
     AboutGood,
     GridItem,
-    Text,
 } from "shared/ui"
 import { Similar } from "widgets"
 
@@ -14,15 +13,13 @@ const GoodPage = () => {
         <ContainerPage>
             <Grid
                 w='100%'
-                h='95%'
+                h='100%'
                 gridTemplateColumns={'1fr 2fr'}
-                gridTemplateRows={'1fr 4fr 3fr'}
                 columnGap='50px'
                 rowGap='35px'
-                overflowY='scroll'
                 templateAreas={`'goodCard price'
                                 'goodCard about-good'
-                                'similar text'`}
+                                'similar about-good'`}
             >
                 <GridItem area={'goodCard'}>
                     <BigGoodCard />
@@ -33,17 +30,8 @@ const GoodPage = () => {
                 <GridItem area={'about-good'}>
                     <AboutGood />
                 </GridItem>
-                <GridItem mt='-25px' area={'similar'}>
+                <GridItem area={'similar'}>
                     <Similar />
-                </GridItem>
-                <GridItem area={'text'}>
-                    <Text
-                        fontSize='24px'
-                    >
-                        Подробное описание товара,
-                        процесса изготовления, информация о продавце,
-                        его контактные данные
-                    </Text>
                 </GridItem>
             </Grid>
         </ContainerPage>

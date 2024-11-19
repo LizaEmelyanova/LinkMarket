@@ -5,22 +5,24 @@ export const AboutGood = () => {
 
     return (
         <Flex
+            minH='500px'
             flexDir='column'
             bg='gray.100'
-            gap='20px'
             p='50px 60px'
             borderRadius='30px'
+            justifyContent='space-between'
         >
-            <Text fontSize='24px' fontWeight={600}>
-                Описание товара:
-            </Text>
-            <Text fontSize='24px' fontWeight={600}>
-                Цвета: серый, белый, чёрный, голубой (мало) <br />
-                Материал: плюш, искусственная шерсть <br />
-                Приблизительное время доставки: от 2 дней
-            </Text>
+            <Flex flexDir='column' gap='20px'>
+                <Text fontSize='24px' fontWeight={600}>
+                    Описание товара:
+                </Text>
+                <Text fontSize='24px' fontWeight={600}>
+                    Цвета: серый, белый, чёрный, голубой (мало) <br />
+                    Материал: плюш, искусственная шерсть <br />
+                    Приблизительное время доставки: от 2 дней
+                </Text>
+            </Flex>
             <Flex
-                mt='50px'
                 flexDir='column'
                 gap='20px'
             >

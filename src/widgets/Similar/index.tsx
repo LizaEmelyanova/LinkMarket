@@ -6,7 +6,7 @@ const Similar = () => {
         <Flex
             p='20px 30px 30px'
             bg='gray.300'
-            borderRadius='30px 30px 0 0'
+            borderRadius='30px'
             flexDir='column'
             gap='10px'
         >
@@ -18,11 +18,13 @@ const Similar = () => {
                 Похожие товары
             </Text>
             <Grid
+                w='100%'
                 gridTemplateColumns={'repeat(auto-fit, minmax(130px, 130px))'}
-                justifyContent='space-between'
+                justifyContent='space-between' 
                 rowGap='20px'   
             >
-
+                <GoodCard small />
+                <GoodCard small />
                 <GoodCard small />
                 <GoodCard small />
                 <GoodCard small />

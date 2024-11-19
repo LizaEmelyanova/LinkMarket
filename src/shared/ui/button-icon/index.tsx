@@ -4,17 +4,21 @@ import { ReactElement } from 'react'
 export const ButtonIcon = ({
     icon,
     onClick,
+    bg = 'gray.100',
+    hover_bg = 'white'
 }: {
     icon: ReactElement,
-    onClick: () => void
+    onClick: () => void,
+    bg?: string,
+    hover_bg?: string
 }) => (
     <Flex
-        bg='gray.100'
+        bg={bg}
         borderRadius='100%'
         w='40px'
         h='40px'
         _hover={{
-            bg: 'white'
+            bg: `${hover_bg}`
         }}
         justifyContent='center'
         alignItems='center'

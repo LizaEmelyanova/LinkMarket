@@ -4,6 +4,7 @@ import { PageRoutes } from "shared/config/pages"
 
 const MainPage = lazy(() => import('./main-page'))
 const LoginPage = lazy(() => import ('./login-page'))
+const Profile = lazy(() => import('./profile'))
 const GoodPage = lazy(() => import('./good-page'))
 const Basket = lazy(() => import('./basket'))
 
@@ -17,6 +18,10 @@ export default function Routing() {
             <Route
                 path={PageRoutes.LoginPage}
                 element={<LoginPage />}
+            />
+            <Route
+                path={PageRoutes.Profile}
+                element={<Profile />}
             />
             <Route
                 path={PageRoutes.GoodPage}

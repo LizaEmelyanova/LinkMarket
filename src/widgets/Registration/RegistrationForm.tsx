@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom"
+import { PageRoutes } from "shared/config/pages"
 import { Check, Paperclip } from "shared/iconpack"
 import {
     Flex,
@@ -14,6 +16,8 @@ export const RegistrationForm = ({
 }: {
     role?: string
 }) => {
+    const navigate = useNavigate()
+
     const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const file = e.target.files?.[0]
         if (file) {
@@ -185,9 +189,7 @@ export const RegistrationForm = ({
                         fontWeight: 600,
                         bgColor: 'white'
                     }}
-                    onClick={() => {
-
-                    }}
+                    onClick={() => {navigate(PageRoutes.Profile)}}
                 >
                     {role === 'buyer' && 'Зарегистрироваться'}
                     {role === 'salesman' && 'Получить подтверждение'}

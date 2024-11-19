@@ -5,6 +5,7 @@ export const Advertising = () => {
         <Box
             w='100%'
             maxH='250px'
+            minH='115px'
             mb='20px'
             borderRadius='20px'
             overflow='hidden'

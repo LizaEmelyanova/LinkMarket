@@ -1,7 +1,6 @@
 import { ContainerPage, Box, Flex, Text } from "shared/ui"
 import { GoodsList } from "widgets/GoodsList"
 
-
 const Basket = () => {
     return (
         <ContainerPage>
@@ -21,7 +20,7 @@ const Basket = () => {
                     Корзина
                 </Text>
             </Flex>
-            <Box pb='20px' h={'80%'} overflowY={'scroll'}>
+            <Box>
                 <GoodsList />
             </Box>
         </ContainerPage>

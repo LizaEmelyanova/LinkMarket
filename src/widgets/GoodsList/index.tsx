@@ -73,6 +73,7 @@ const GoodsList = () => {
                 <GoodCard />
                 <GoodCard />
                 <GoodCard />
+                <GoodCard />
             </Grid>
         </Flex>
     )
