@@ -44,6 +44,8 @@ const Header = () => {
                     <Text
                         color={'white'}
                         fontSize={'20px'}
+                        cursor='pointer'
+                        onClick={() => navigate(PageRoutes.MainPage)}
                     >
                         LinkMarket
                     </Text>
@@ -65,7 +67,7 @@ const Header = () => {
                                 height={'20px'}
                                 color="black"
                             />}
-                            onClick={() => console.log('message')}
+                            onClick={() => navigate(PageRoutes.Chats)}
                         />
                         <ButtonIcon
                             icon={<Setting

@@ -19,7 +19,7 @@ const Similar = () => {
             </Text>
             <Grid
                 w='100%'
-                gridTemplateColumns={'repeat(auto-fit, minmax(130px, 130px))'}
+                gridTemplateColumns={'repeat(auto-fit, minmax(120px, 120px))'}
                 justifyContent='space-between' 
                 rowGap='20px'   
             >

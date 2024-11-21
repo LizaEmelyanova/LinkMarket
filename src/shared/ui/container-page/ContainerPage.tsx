@@ -16,7 +16,7 @@ export const ContainerPage = ({
         w="100%"
         h="100%"
         p="20px"
-        overflowY={'scroll'}
+        overflowY='scroll'
         flexDirection="column"
         zIndex={0}
       >

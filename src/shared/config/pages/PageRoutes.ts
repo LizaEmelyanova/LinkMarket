@@ -4,4 +4,5 @@ export const PageRoutes = {
     GoodPage: '/good',
     Basket: '/basket',
     Profile: '/profile',
+    Chats: '/chats'
   } as const
