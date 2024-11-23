@@ -62,6 +62,8 @@ const GoodsList = () => {
             <Grid
                 w='100%'
                 gridTemplateColumns={'repeat(auto-fit, minmax(230px, 230px))'}
+                // columnGap={btns.length >= 3 ? '' : '25px'}
+                // justifyContent={btns.length >= 3 ? 'space-between' : ''}
                 justifyContent='space-between'
                 rowGap='20px'                
             >

@@ -1,4 +1,4 @@
-import { ContainerPage, Box, Flex, Text } from "shared/ui"
+import { ContainerPage, Flex, Text } from "shared/ui"
 import { ChatsWidget } from "widgets"
 
 const Chats = () => {
@@ -20,9 +20,7 @@ const Chats = () => {
                     Чаты
                 </Text>
             </Flex>
-            <Box>
-                <ChatsWidget />
-            </Box>
+            <ChatsWidget />
         </ContainerPage>
     )
 }

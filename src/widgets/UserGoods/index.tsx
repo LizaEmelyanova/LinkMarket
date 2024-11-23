@@ -1,11 +1,19 @@
 import { Grid, GoodCard, Flex, Text, Button } from "shared/ui"
 
-const UserGoods = () => {
-    const btns = [
+const UserGoods = ({role}: {role: string}) => {
+    const salesmanBtns = [
         {name: 'Любимое', active: false, onClick: () => console.log('Любимое')},
         {name: 'Корзина', active: false, onClick: () => console.log('Корзина')},
         {name: 'История', active: true, onClick: () => console.log('История')},
     ]
+
+    const buyerBtns = [
+        {name: 'Любимое', active: false, onClick: () => console.log('Любимое')},
+        {name: 'Корзина', active: false, onClick: () => console.log('Корзина')},
+        {name: 'Конкуренты', active: true, onClick: () => console.log('Конкуренты')},
+    ]
+
+    const btns = role === 'salesman' ? salesmanBtns : buyerBtns
 
     return (
         <Flex
@@ -24,9 +32,10 @@ const UserGoods = () => {
                 Выберите категорию
             </Text>
             <Flex gap='15px'>
-                {btns.map((btn) => (
+                {btns.map((btn, i) => (
                     <Button
-                        w='230px'
+                        key={i}
+                        maxW='230px'
                         h='50px'
                         color={btn.active ? 'gray.200' : 'white'}
                         fontSize='24px'
@@ -45,6 +54,8 @@ const UserGoods = () => {
             <Grid
                 gridTemplateColumns={'repeat(auto-fit, minmax(120px, 120px))'}
                 justifyContent='space-between'
+                // columnGap={btns.length >= 3 ? '' : '25px'}
+                // justifyContent={btns.length >= 3 ? 'space-between' : ''}
                 rowGap='20px'   
             >
 

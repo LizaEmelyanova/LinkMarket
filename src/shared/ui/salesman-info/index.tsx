@@ -1,7 +1,7 @@
 import { Button, Flex, Text, Box } from ".."
 
 
-export const AboutCard = () => {
+export const SalesmanInfo = () => {
 
     return (
         <Box
@@ -36,7 +36,7 @@ export const AboutCard = () => {
                             bg: 'gray.100'
                         }}
                     >
-                        Сообщение
+                        Изменить
                     </Button>
                 </Flex>
             </Flex>

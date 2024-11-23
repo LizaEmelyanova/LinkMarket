@@ -90,8 +90,8 @@ const Header = () => {
                     <DrawerBody>
                         <ProfileCard />
                         <Flex flexDir='column' gap='10px' mt='20px'>
-                            {btns.map((btn) => (
-                                <Button onClick={btn.onClick}>{btn.name}</Button>
+                            {btns.map((btn, i) => (
+                                <Button key={i} onClick={btn.onClick}>{btn.name}</Button>
                             ))}
                         </Flex>
                     </DrawerBody>
