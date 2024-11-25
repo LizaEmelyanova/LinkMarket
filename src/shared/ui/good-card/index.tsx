@@ -4,9 +4,11 @@ import { useNavigate } from "react-router-dom"
 import { PageRoutes } from "shared/config/pages"
 
 export const GoodCard = ({
-    small = false
+    small = false,
+    basket = true,
 }: {
     small?: boolean
+    basket?: boolean
 }) => {
     const navigate = useNavigate()
 
@@ -23,7 +25,7 @@ export const GoodCard = ({
             <Box
                 h={small ? '125px' : '250px'}
                 w={small ? '100px' : '200px'}
-                bg='gray.100'
+                bg='white'
                 borderRadius='5px' />
             <Flex alignItems='center' gap='20px'>
                 <Text
@@ -33,7 +35,7 @@ export const GoodCard = ({
                 >
                     795 ₽
                 </Text>
-                <Bag color="white" />
+                {basket && <Bag color="white" />}
             </Flex>
         </Flex>
     )

@@ -53,7 +53,7 @@ const GoodsList = () => {
                             bg: 'gray.200'
                         }}
                         rightIcon={<Edit color="white" width='20px' height='20px' />}
-                        onClick={() => navigate(PageRoutes.Basket)}
+                        onClick={() => navigate(PageRoutes.OrderPage)}
                     >
                         Оформить заказ
                     </Button>

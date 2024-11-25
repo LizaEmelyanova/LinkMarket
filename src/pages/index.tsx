@@ -8,6 +8,7 @@ const Profile = lazy(() => import('./profile'))
 const GoodPage = lazy(() => import('./good-page'))
 const Basket = lazy(() => import('./basket'))
 const Chats = lazy(() => import('./chats'))
+const OrderPage = lazy(() => import ('./order-page'))
 
 export default function Routing() {
     return (
@@ -35,6 +36,10 @@ export default function Routing() {
             <Route
                 path={PageRoutes.Chats}
                 element={<Chats />}
+            />
+            <Route
+                path={PageRoutes.OrderPage}
+                element={<OrderPage />}
             />
         </Routes>
     )
