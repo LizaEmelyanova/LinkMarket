@@ -13,7 +13,7 @@ const Actions = ({role}: {role: string}) => {
     ]
 
     const buyerBtns = [
-        {name: 'Добавить товар', onClick: () => console.log('Добавить товар')},
+        {name: 'Добавить товар', onClick: () => navigate(PageRoutes.CreateGood)},
         {name: 'Все клиенты', onClick: () => console.log('Все клиенты')},
         {name: 'Планирование', onClick: () => console.log('Планирование')},
         {name: 'Заказы', onClick: () => console.log('Заказы')},

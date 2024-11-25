@@ -1,8 +1,6 @@
 import { Button, Flex, Text } from ".."
 
-
 export const AboutGood = () => {
-
     return (
         <Flex
             minH='500px'
@@ -13,7 +11,11 @@ export const AboutGood = () => {
             justifyContent='space-between'
         >
             <Flex flexDir='column' gap='20px'>
-                <Text fontSize='24px' fontWeight={600}>
+                <Text
+                    fontSize='24px'
+                    fontWeight={600}
+                    color='black'
+                >
                     Описание товара:
                 </Text>
                 <Text fontSize='24px' fontWeight={600}>

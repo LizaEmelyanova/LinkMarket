@@ -5,5 +5,6 @@ export const PageRoutes = {
     Basket: '/basket',
     Profile: '/profile',
     Chats: '/chats',
-    OrderPage: '/order'
+    OrderPage: '/order',
+    CreateGood: '/create-good',
   } as const
