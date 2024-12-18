@@ -1,0 +1,1 @@
+import{j as r}from"./index-DksE4EtG.js";import{A as o}from"./index-DzJ7a_CZ.js";import{C as t}from"./Text-D7ceCm6O.js";import{G as s}from"./index-CYCO12FM.js";import"./index-D3nTArDB.js";import"./index-ADFnu5CB.js";import"./index-CbxbWMa2.js";const f=()=>r.jsxs(t,{children:[r.jsx(o,{}),r.jsx(s,{})]});export{f as default};
